@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Task Management System</title>
+</header>
+
+<body>
+    <div class="navBar">
+        <input type="text" id="search" placeholder="search">
+        <button id="refresh">REFRESH</button>
+        <button class="btn-success" id="add">ADD TASK</button>
+    </div>
+
+    <div class="tasks" id="tasksPanel">
+        
+    </div>
+
+    <div class="modal hidden" id="addModal">
+        <div class="modal-md">
+            <input type="text" placeholder="title" id="title">
+            <textarea type="text" placeholder="description" id="description"></textarea>
+            <div>
+                <button class="btn-success" id="save">Save</button>
+                <button class="btn-danger" id="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="alertModal">
+        <div class="modal-sm">
+            <h3 class="alert-modal-title">Alert</h3>
+            <p class="alert-modal-message" id="alertMessage"></p>
+            <button class="alert-modal-button" id="alertButton">Ok</button>
+        </div>
+    </div>
+</body>
+
+</html>
